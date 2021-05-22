@@ -1,37 +1,37 @@
 @echo off
 setlocal enabledelayedexpansion
-echo windows10ÍøÂçÓÅ»¯¹¤¾ß
+echo windows10ç½‘ç»œä¼˜åŒ–å·¥å…·
 echo.
-echo ×÷Õß£ºphenix
+echo ä½œè€…ï¼šphenix
 echo.
-echo ÓÊÏä£º279682817@qq.com
+echo é‚®ç®±ï¼š279682817@qq.com
 echo.
-set /p recover=ÊÇ·ñĞèÒª»Ö¸´ÓÅ»¯Ö®Ç°µÄÉèÖÃ?1ÊÇ0·ñ:
+set /p recover=æ˜¯å¦éœ€è¦æ¢å¤ä¼˜åŒ–ä¹‹å‰çš„è®¾ç½®?1æ˜¯0å¦:
 if !recover! equ 1 (
 echo.
-rem echo »Ö¸´·şÎñÉèÖÃ
+rem echo æ¢å¤æœåŠ¡è®¾ç½®
 rem start /wait /b reg add  "HKLM\SYSTEM\CurrentControlSet\Services\RpcEptMapper" /v Start /t reg_dword /d 3 /f
 rem start /wait /b reg add  "HKLM\SYSTEM\CurrentControlSet\Services\Dnscache" /v Start /t reg_dword /d 3 /f
 rem echo.
-rem echo »Ö¸´MaxCacheTtl
+rem echo æ¢å¤MaxCacheTtl
 rem echo.
 rem start /wait /b reg delete "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v MaxCacheTtl /f
 rem echo.
-echo »Ö¸´Buffer
+echo æ¢å¤Buffer
 echo.
 start /wait /b reg delete "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketSendBufferLength /f
 echo.
 start /wait /b reg delete "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketReceiveBufferLength /f
 echo.
-echo »Ö¸´UdpRecvBufferSize
+echo æ¢å¤UdpRecvBufferSize
 echo.
 start /wait /b reg delete "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v UdpRecvBufferSize /f
 echo.
-echo »Ö¸´MaxCacheSize
+echo æ¢å¤MaxCacheSize
 echo.
 start /wait /b reg delete "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v MaxCacheSize /f
 echo.
-echo »Ö¸´Íê±Ï£¡
+echo æ¢å¤å®Œæ¯•ï¼
 echo.
 pause
 exit
@@ -39,32 +39,32 @@ exit
 echo.
 set useOld=
 if exist %temp%\url.txt (
-set /p useOld=ĞèÒªÊ¹ÓÃÉÏ´ÎµÄÍøÖ·²âÊÔÂğ?1ÊÇ0·ñ:
+set /p useOld=éœ€è¦ä½¿ç”¨ä¸Šæ¬¡çš„ç½‘å€æµ‹è¯•å—?1æ˜¯0å¦:
 )
 echo.
 if not !useOld! equ 1 (
-echo ÄÚÖÃÁËÒÔÏÂÍøÖ·²âÊÔ£º
+echo å†…ç½®äº†ä»¥ä¸‹ç½‘å€æµ‹è¯•ï¼š
 echo.
-echo ÌÚÑ¶ÊÓÆµ http://v.qq.com/
-echo °®ÆæÒÕ http://www.iqiyi.com/
-echo ÌÔ±¦Íø https://www.taobao.com/
-echo ¾©¶«Íø https://www.jd.com/
-echo QQÒôÀÖ http://y.qq.com/
-echo ÍøÒ×ÔÆÒôÀÖ http://music.163.com/
-echo QQÓÊÏä http://mail.qq.com/
-echo ÍøÒ×163ÓÊÏä http://mail.163.com/
-echo Ğ¯³ÌÍø https://www.ctrip.com/
+echo è…¾è®¯è§†é¢‘ http://v.qq.com/
+echo çˆ±å¥‡è‰º http://www.iqiyi.com/
+echo æ·˜å®ç½‘ https://www.taobao.com/
+echo äº¬ä¸œç½‘ https://www.jd.com/
+echo QQéŸ³ä¹ http://y.qq.com/
+echo ç½‘æ˜“äº‘éŸ³ä¹ http://music.163.com/
+echo QQé‚®ç®± http://mail.qq.com/
+echo ç½‘æ˜“163é‚®ç®± http://mail.163.com/
+echo æºç¨‹ç½‘ https://www.ctrip.com/
 echo 12306 https://www.12306.cn/index/
-echo BOSSÖ±Æ¸ https://www.zhipin.com
-echo Ç°³ÌÎŞÓÇ https://www.51job.com/
-echo ĞÂÀËÎ¢²© https://weibo.com/
-echo °Ù¶ÈËÑË÷ http://www.baidu.com
-echo ±ØÓ¦ËÑË÷ https://cn.bing.com/
-echo ĞÂÀËÍø https://www.sina.com.cn/
-echo ÍøÒ×Íø https://www.163.com/
-echo ËÑºüÍø https://www.sohu.com/
-echo ÌÚÑ¶Íø https://www.qq.com/
-echo ÑëÊÓÍø https://www.cctv.com/ 
+echo BOSSç›´è˜ https://www.zhipin.com
+echo å‰ç¨‹æ— å¿§ https://www.51job.com/
+echo æ–°æµªå¾®åš https://weibo.com/
+echo ç™¾åº¦æœç´¢ http://www.baidu.com
+echo å¿…åº”æœç´¢ https://cn.bing.com/
+echo æ–°æµªç½‘ https://www.sina.com.cn/
+echo ç½‘æ˜“ç½‘ https://www.163.com/
+echo æœç‹ç½‘ https://www.sohu.com/
+echo è…¾è®¯ç½‘ https://www.qq.com/
+echo å¤®è§†ç½‘ https://www.cctv.com/ 
 echo.
 echo http://v.qq.com/>%temp%\url.txt
 echo http://www.iqiyi.com/>>%temp%\url.txt
@@ -86,7 +86,7 @@ echo https://www.163.com/>>%temp%\url.txt
 echo https://www.sohu.com/>>%temp%\url.txt
 echo https://www.qq.com/>>%temp%\url.txt
 echo https://www.cctv.com/>>%temp%\url.txt
-set /p checkInput=ĞèÒª¶¨ÖÆ²âÊÔÍøÖ·Âğ£¿1ĞèÒª0²»ĞèÒª:
+set /p checkInput=éœ€è¦å®šåˆ¶æµ‹è¯•ç½‘å€å—ï¼Ÿ1éœ€è¦0ä¸éœ€è¦:
 echo.
 if !checkInput! equ 1 (
 call :inputUrl
@@ -112,34 +112,34 @@ set minTime=
 set minBuffer=
 set initBuffer=512
 echo.
-echo ³õÊ¼»¯·şÎñÉèÖÃ
+echo åˆå§‹åŒ–æœåŠ¡è®¾ç½®
 start /wait /b reg add  "HKLM\SYSTEM\CurrentControlSet\Services\RpcEptMapper" /v Start /t reg_dword /d 2 /f
 rem start /wait /b reg add  "HKLM\SYSTEM\CurrentControlSet\Services\DcomLaunch" /v Start /t reg_dword /d 2 /f
 start /wait /b reg add  "HKLM\SYSTEM\CurrentControlSet\Services\nsi" /v Start /t reg_dword /d 2 /f
 start /wait /b reg add  "HKLM\SYSTEM\CurrentControlSet\Services\Dnscache" /v Start /t reg_dword /d 2 /f
 echo.
-echo Æô¶¯·şÎñ
+echo å¯åŠ¨æœåŠ¡
 call net start RpcEptMapper
 rem call net start DcomLaunch
 call net start nsi
 call net start Dnscache
 echo.
-echo ³õÊ¼»¯MaxCacheTtl
+echo åˆå§‹åŒ–MaxCacheTtl
 echo.
 start /wait /b reg add  "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v MaxCacheTtl /t reg_dword /d 255 /f
 echo.
 for /L %%f in (1,1,5) do (
-echo ³õÊ¼»¯BufferÎª!initBuffer!
+echo åˆå§‹åŒ–Bufferä¸º!initBuffer!
 echo.
 start /wait /b reg add  "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketSendBufferLength /t reg_dword /d !initBuffer! /f
 echo.
 start /wait /b reg add  "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketReceiveBufferLength /t reg_dword /d !initBuffer! /f
 echo.
-echo ³õÊ¼»¯UdpRecvBufferSize
+echo åˆå§‹åŒ–UdpRecvBufferSize
 echo.
 start /wait /b reg add  "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v UdpRecvBufferSize /t reg_dword /d !initBuffer! /f
 echo.
-echo ³õÊ¼»¯MaxCacheSize
+echo åˆå§‹åŒ–MaxCacheSize
 echo.
 start /wait /b reg add  "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v MaxCacheSize /t reg_dword /d !initBuffer! /f
 echo.
@@ -147,23 +147,25 @@ for /L %%t in (1,1,10) do (
 set start=!time!
 start /wait wscript /b %temp%\send.vbs
 set end=!time!
-set /a startHour=1!start:~0,2!-100
+set startHour=!start:~0,2!
+set /a startHour=1!startHour: =0!-100
 set /a startMin=1!start:~3,2!-100
 set /a startSec=1!start:~6,2!-100
 set /a startMil=1!start:~9,2!-100
-set /a endHour=1!end:~0,2!-100
+set endHour=!end:~0,2!
+set /a endHour=1!endHour: =0!-100
 set /a endMin=1!end:~3,2!-100
 set /a endSec=1!end:~6,2!-100
 set /a endMil=1!end:~9,2!-100
 set /a start=startHour*360000+startMin*6000+startSec*100+startMil
 set /a end=endHour*360000+endMin*6000+endSec*100+endMil
 set /a dura=!end!-!start!
-echo BufferÎª!initBuffer!µÚ%%t´ÎÊ±¼äÎª!dura!
+echo Bufferä¸º!initBuffer!ç¬¬%%tæ¬¡æ—¶é—´ä¸º!dura!
 echo.
 set /a totalTime+=!dura!
 )
 set /a avgTime=!totalTime!/10
-echo BufferÎª!initBuffer!×ÜÊ±¼äÎª!totalTime!£¬Æ½¾ùÊ±¼äÎª!avgTime!
+echo Bufferä¸º!initBuffer!æ€»æ—¶é—´ä¸º!totalTime!ï¼Œå¹³å‡æ—¶é—´ä¸º!avgTime!
 echo.
 if "!minTime!" equ "" (
 set minTime=!avgTime!
@@ -178,42 +180,42 @@ set /a initBuffer*=2
 set avgTime=0
 set totalTime=0
 )
-echo ×î¶ÌÆ½¾ùÊ±¼äÎª!minTime!£¬BufferÉèÖÃÎª!minBuffer!
+echo æœ€çŸ­å¹³å‡æ—¶é—´ä¸º!minTime!ï¼ŒBufferè®¾ç½®ä¸º!minBuffer!
 echo.
-set /p input=Ê¹ÓÃÉÏÊöÖµÉèÖÃBufferÂï£¿1Ôò×Ô¶¯ÉèÖÃ£¬0ÔòÊÖÌî:
+set /p input=ä½¿ç”¨ä¸Šè¿°å€¼è®¾ç½®Bufferå˜›ï¼Ÿ1åˆ™è‡ªåŠ¨è®¾ç½®ï¼Œ0åˆ™æ‰‹å¡«:
 echo.
 if "!input!" equ "1" (
-echo ÉèÖÃBuffer¿ªÊ¼
+echo è®¾ç½®Bufferå¼€å§‹
 echo.
 start /wait /b reg add  "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketSendBufferLength /t reg_dword /d !minBuffer! /f
 echo.
 start /wait /b reg add  "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketReceiveBufferLength /t reg_dword /d !minBuffer! /f
 echo.
-echo ³õÊ¼»¯UdpRecvBufferSize
+echo åˆå§‹åŒ–UdpRecvBufferSize
 echo.
 start /wait /b reg add  "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v UdpRecvBufferSize /t reg_dword /d !minBuffer! /f
 echo.
-echo ³õÊ¼»¯MaxCacheSize
+echo åˆå§‹åŒ–MaxCacheSize
 echo.
 start /wait /b reg add  "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v MaxCacheSize /t reg_dword /d !minBuffer! /f
 echo.
 ) else (
 if "!input!" equ "0" (
-set /p buffer=ÇëÊäÈëÊıÖµ512-8192£º
+set /p buffer=è¯·è¾“å…¥æ•°å€¼512-8192ï¼š
 echo.
 if !buffer! leq 8192 (
 if !buffer! geq 512 (
-echo ÉèÖÃBuffer¿ªÊ¼
+echo è®¾ç½®Bufferå¼€å§‹
 echo.
 start /wait /b reg add  "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketSendBufferLength /t reg_dword /d !buffer! /f
 echo.
 start /wait /b reg add  "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings" /v SocketReceiveBufferLength /t reg_dword /d !buffer! /f
 echo.
-echo ³õÊ¼»¯UdpRecvBufferSize
+echo åˆå§‹åŒ–UdpRecvBufferSize
 echo.
 start /wait /b reg add  "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v UdpRecvBufferSize /t reg_dword /d !buffer! /f
 echo.
-echo ³õÊ¼»¯MaxCacheSize
+echo åˆå§‹åŒ–MaxCacheSize
 echo.
 start /wait /b reg add  "HKLM\System\CurrentControlSet\Services\Dnscache\Parameters" /v MaxCacheSize /t reg_dword /d !buffer! /f
 echo.
@@ -225,11 +227,11 @@ pause
 exit
  
 :inputUrl
-echo ÍøÖ·¸ñÊ½£ºhttp://www.baidu.com
+echo ç½‘å€æ ¼å¼ï¼šhttp://www.baidu.com
 for /L %%f in (1,1,1000) do (
-set /p urls=ÇëÊäÈëÍøÖ·:
+set /p urls=è¯·è¾“å…¥ç½‘å€:
 echo !urls!>>%temp%\url.txt
-set /p checkIn=ÊÇ·ñ¼ÌĞøÊäÈë?1¼ÌĞø0½áÊø:
+set /p checkIn=æ˜¯å¦ç»§ç»­è¾“å…¥?1ç»§ç»­0ç»“æŸ:
 if not !checkIn! equ 1 (
 goto :eof
 )
