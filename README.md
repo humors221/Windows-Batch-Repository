@@ -12,3 +12,6 @@ https://www.virustotal.com/gui/file/1ee16b08b8f1cab3c7839ff3357a3634b38fc97aa1d9
 
 获取当前连接的无线的密码.bat
 https://www.virustotal.com/gui/file/0ec808e568c5abbe1ca83513c06829aa8e4bf009fe8dc9e44f785814b8175636/details
+
+win10关闭端口程序右键管理员运行.bat
+https://www.virustotal.com/gui/file/c694b3cfe9bfed17fb11f98aebf994f559d784459a1886331d55e6bf29ecd3d0/details
